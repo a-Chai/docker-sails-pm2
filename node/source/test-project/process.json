@@ -1,0 +1,14 @@
+{
+  "apps": [{
+    "name": "tesing1",
+    "script": "./app.js",
+    "cwd": "./",
+    "watch": ["./api/", "./config/"],
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }]
+}

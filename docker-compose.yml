@@ -1,0 +1,13 @@
+version: "3"
+services:
+  testing_server:
+    container_name: testing_server
+    hostname: testing_server
+    cap_add:
+      - SYS_ADMIN
+    build: ./node/
+    volumes:
+      - ./node/source:/root/source
+    ports:
+      - "1337:1337"
+    restart: unless-stopped
